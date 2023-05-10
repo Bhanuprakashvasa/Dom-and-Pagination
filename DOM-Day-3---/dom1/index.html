@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Manipulation with Forms</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+	<div class="container">
+		<h1>DOM Form</h1>
+		<form id="myForm">
+			<div class="form-group">
+				<label for="firstName">First Name</label>
+				<input type="text" class="form-control" id="firstName" name="firstName" required>
+			</div>
+			<div class="form-group">
+				<label for="lastName">Last Name</label>
+				<input type="text" class="form-control" id="lastName" name="lastName" required>
+			</div>
+			<div class="form-group">
+				<label for="address">Address</label>
+				<input type="text" class="form-control" id="address" name="address" required>
+			</div>
+			<div class="form-group">
+				<label for="pincode">Pincode</label>
+				<input type="text" class="form-control" id="pincode" name="pincode" required>
+			</div>
+			<div class="form-group">
+				<label for="gender">Gender</label>
+				<select class="form-control" id="gender" name="gender" required>
+					<option value="">Select Gender</option>
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+					<option value="Other">Other</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="food">Choice of Food (Select at least 2 options)</label>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="Pizza" id="food1" name="food[]">
+					<label class="form-check-label" for="food1">
+						Pizza
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="Burger" id="food2" name="food[]">
+					<label class="form-check-label" for="food2">
+						Burger
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="Pasta" id="food3" name="food[]">
+					<label class="form-check-label" for="food3">
+						Pasta
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="Salad" id="food4" name="food[]">
+					<label class="form-check-label" for="food4">
+						Salad
+					</label>
+				</div>
+				<div class="form-check">
+					<input class="form-check-input" type="checkbox" value="Sandwich" id="food5" name="food[]">
+					<label class="form-check-label" for="food5">
+						Sandwich
+					</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="state">State</label>
+				<input type="text" class="form-control" id="state" name="state" >
+            </div>
+			<div class="form-group">
+				<label for="country">Country</label>
+				<input type="text" class="form-control" id="country" name="country" required>
+			</div>
+			<button type="submit" class="btn btn-primary">Submit</button>
+			<button type="button" class="btn btn-danger" onclick="clearForm()">Clear</button>
+		</form>
+		<br>
+		<h1>Table</h1>
+		<table class="table">
+			<thead>
+				<tr>
+					<th>First Name</th>
+					<th>Last Name</th>
+					<th>Address</th>
+					<th>Pincode</th>
+					<th>Gender</th>
+					<th>Food</th>
+					<th>State</th>
+					<th>Country</th>
+				</tr>
+			</thead>
+			<tbody id="tableBody">
+			</tbody>
+		</table>
+	</div>
+    <script src="script.js"></script>
+</body>
+</html>
+

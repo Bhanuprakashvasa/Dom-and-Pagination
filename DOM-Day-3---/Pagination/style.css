@@ -1,0 +1,90 @@
+.detail {
+	display: flex;
+	flex-flow: column nowrap;
+	width: 27em;
+	height: 9em;
+	background-color: #ae68d5;
+	/* border: 1px solid grey; */
+	position: absolute;
+	left: 39em;
+	top: 11em;
+	border-radius: 5px;
+	overflow-y: hidden;
+	text-align: center;
+	box-shadow: 2px 1px 18px -5px;
+}
+
+.main-container {
+	display: flex;
+	flex-flow: row nowrap;
+	width: 30.2em;
+	height: 2em;
+	background-color: #fefdfb;
+	border: 1px solid grey;
+	position: absolute;
+	left: 37em;
+	top: 21em;
+	border-radius: 5px;
+	overflow-x: hidden;
+	box-shadow: 2px 1px 18px -5px;
+}
+
+.next {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3.5em;
+	height: 100%;
+	border-right: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	top: 0px;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.previous {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4.5em;
+	height: 100%;
+	border-right: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	top: 0px;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.first {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 4.5em;
+	height: 100%;
+	border-right: 1px solid black;
+	padding: 10px;
+	text-align: center;
+	top: 0px;
+	position: relative;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.link {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1em;
+	height: 100%;
+	text-align: center;
+	border-right: 1px solid black;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
